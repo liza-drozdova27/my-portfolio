@@ -1,7 +1,7 @@
 :root {
     --main-color: rgb(28, 97, 143);
     --second-color: rgb(255, 255, 255);
-    --ligt-color:aliceblue;
+    --ligt-color: aliceblue;
 }
 
 
@@ -91,14 +91,24 @@ body {
 }
 
 .home__inner {
-    position: absolute;
-    top: 50%;
-    display: flex;
-    flex-direction: column;
     max-width: 640px;
     width: 100%;
+    height: calc(100vh - 218px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__name {
     font-size: 48px;
-    justify-content: flex-start;
+    line-height: 65px;
+    font-weight: 400;
+}
+
+.home__title {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 123px;
 }
 
 .home__link {
@@ -121,16 +131,49 @@ body {
     animation-name: arrow;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    
+
 }
+
 @keyframes arrow {
     0% {
-      top: 40px;
+        top: 40px;
     }
+
     50% {
-      top: 70px;
+        top: 70px;
     }
+
     100% {
-      top: 40px;
+        top: 40px;
     }
-  }
+}
+
+.about {
+    padding: 140px 0;
+}
+
+.about_text {
+    font-size: 24px;
+
+}
+
+.title {
+    display: flex;
+    font-size: 48px;
+    padding-bottom: 60px;
+
+}
+
+.about__item {
+    margin-bottom: 30px;
+}
+
+.skills {
+    background-color: #f6f6f6;
+}
+
+.portait {
+    width: 415px;
+    height: 450px;
+
+}
